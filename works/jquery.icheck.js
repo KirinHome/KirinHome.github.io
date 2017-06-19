@@ -125,10 +125,10 @@
           label = $('label[for="' + id + '"]').add(self.closest('label')),
 
           // Wrap input
-          parent = self.wrap('<div class="' + className + '">').trigger('ifCreated').parent().append(settings.insert),
+          parent = self.wrap('<div class="' + className + '"/>').trigger('ifCreated').parent().append(settings.insert),
 
           // Layer addition
-          helper = $('<ins class="' + _iCheck + '-helper">').css(layer).appendTo(parent);
+          helper = $('<ins class="' + _iCheck + '-helper"/>').css(layer).appendTo(parent);
 
         // Finalize customization
         self.data(_iCheck, {o: settings, s: self.attr('style')}).css(hide);
@@ -394,4 +394,4 @@
   function capitalize(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
   };
-})(jQuery, 'iCheck', 'checkbox', 'radio', 'checked', 'disabled', 'type', 'click', 'touchbegin.i touchend.i', 'addClass', 'removeClass', 'cursor');</ins></div>
+})(jQuery, 'iCheck', 'checkbox', 'radio', 'checked', 'disabled', 'type', 'click', 'touchbegin.i touchend.i', 'addClass', 'removeClass', 'cursor');
